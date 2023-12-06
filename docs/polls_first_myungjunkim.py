@@ -26,6 +26,7 @@ list_question = ["상품의 품질에 대해 어떻게 생각하시나요?"
                 ,"상품에 대한 전반적인 만족도는 어떠신가요?"
                 ]
 list_answer =  ["1. 좋음", "2. 중간", "3. 좋아지길"]
+
 for num_count in [0, 1, 2, 3] :
     str_question = list_question[num_count]
     print("{}".format(str_question))
