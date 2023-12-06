@@ -31,6 +31,11 @@ for num_count in [0, 1, 2, 3] :
     str_question = list_question[num_count]
     print("{}".format(str_question))
     print("{}".format(list_answer))
+
+    for answer in [0, 1, 2] :
+        str_answer
+        pass
+
     print("--------------------------------------------------------")
     pass
 print("End progrem!")
