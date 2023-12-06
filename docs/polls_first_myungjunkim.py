@@ -25,17 +25,15 @@ list_question = ["상품의 품질에 대해 어떻게 생각하시나요?"
                 ,"상품의 디자인에 대해 어떻게 생각하시나요?"
                 ,"상품에 대한 전반적인 만족도는 어떠신가요?"
                 ]
-list_answer =  ["1. 좋음", "2. 중간", "3. 좋아지길"]
-
-for num_count in [0, 1, 2, 3] :
-    str_question = list_question[num_count]
+list_answer =  ["좋음", "중간", "좋아지길"]
+for question in [0, 1, 2, 3] :
+    str_question = list_question[question]
     print("{}".format(str_question))
-    print("{}".format(list_answer))
 
     for answer in [0, 1, 2] :
-        str_answer
-        pass
-
+        final_answer = list_answer[answer]
+        print("{}.{}".format(answer+1, final_answer), end = " ")
+    print("")
     print("--------------------------------------------------------")
     pass
 print("End progrem!")
