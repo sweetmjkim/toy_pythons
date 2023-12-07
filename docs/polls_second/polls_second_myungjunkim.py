@@ -21,23 +21,19 @@ for num_first in [0,1,2,3]:
         print("{}. {}".format(str_answer_number, str_answer), end = " ")
         pass
 
-
     if num_first <= 3:
         print("\n")
         str_question_result = input("당신 생각은 몇번 : ")
         num_question_result = int(str_question_result) # 문자를 숫자로 변환
         index = num_question_result - 1 # index 위치값 적용
 
-
         print("-----------------------------------------")
     list_index_answer[index] = list_index_answer[index] + 1
     pass
 
-
 print("")
 print("---------------- 통 계 ----------------")
 print("설문자 답항별 갯수 표시 : {} ".format(list_index_answer))
-print("\n")
 
 weighted_mean = ((list_index_answer[0] * 3) + (list_index_answer[1] * 2) +(list_index_answer[2] * 1)) / (list_index_answer[0] + list_index_answer[1] + list_index_answer[2])
-print(weighted_mean)
+print("답항 가중 평균 : {}" .format(weighted_mean))
