@@ -28,6 +28,7 @@ list_question = ["상품의 품질에 대해 어떻게 생각하시나요?"
 list_answer =  ["좋음", "중간", "좋아지길"]
 for question in [0, 1, 2, 3] :
     str_question = list_question[question]
+    print("{}".format(question+1), end = " ")
     print("{}".format(str_question))
 
     for answer in [0, 1, 2] :
