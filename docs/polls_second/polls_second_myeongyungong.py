@@ -1,4 +1,5 @@
-#  최종 답
+# source from ../polls_first/polls_first_myungjunkim.py
+# 최종 답
 # 1. 상품의 품질에 대해 어떻게 생각하시나요?
 # 1. 좋음     2. 중간     3. 좋아지길
 # ----------
