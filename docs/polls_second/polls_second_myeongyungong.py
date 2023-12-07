@@ -39,7 +39,7 @@ for question in [0, 1, 2, 3] :
         pass
     
     print("")
-    # 번호 입력 받기 및 입력한 번호 계산
+    # 번호 입력 받기 및 입력한 번호 list에 대입
     number_answer = int(input("당신의 생각은 몇 번 : "))
     index = number_answer - 1
     list_answer_number[index] = list_answer_number[index] + 1
@@ -50,13 +50,13 @@ for question in [0, 1, 2, 3] :
 # 답항별 갯수 표기
 print("답항별 갯수 표시 : {}".format(list_answer_number))
 
-# 답변별 가중치 표기, 어떤 숫자를 더 많이 눌렀나?
+# 답변별 가중치 표기
 print("답변별 가중치(좋음:3, 중간:2, 좋아지길:1)")
 
 # 답항 가중 평균 계산
-avg_hight = (list_answer_number[0]*3 + list_answer_number[1]*2 + list_answer_number[2]*1)
-avg_low = (list_answer_number[0] + list_answer_number[1] + list_answer_number[2])
-avg = avg_hight / avg_low
-print("답항 가중 평균 : {}".format(avg))
+sum_cal = (list_answer_number[0]*3 + list_answer_number[1]*2 + list_answer_number[2]*1)
+sum_list = (list_answer_number[0] + list_answer_number[1] + list_answer_number[2])
+avg = sum_cal / sum_list
+print("답항 가중 평균 : {}\n".format(avg) )
 
-print("End progrem!")
+print("End progrem!\n")
