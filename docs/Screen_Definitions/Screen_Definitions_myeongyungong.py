@@ -8,14 +8,16 @@
 
 score = [10,15,10,5]
 list_answer = []
-my_score = 0
 
 correct = input("번호를 입력하세요 : ")
 list_correct = [2,1,1,2]
 
+index = [0,0,0,0]
+
 for number in list_correct:
-    result = int(correct) + int(number)
-    print("{}".format(result))
+    for my_score in score:
+        result = int(my_score)
+        print("{}".format(result))
 
 
 
@@ -30,4 +32,4 @@ for number in list_correct:
 def main():
     # print("응답한 내용 : {}".format(list_static))
     print("당신 응답 합계 : {}".format())
-    print("학점은 : {}".format(grade()))
+    print("학점은 : {}".format())
