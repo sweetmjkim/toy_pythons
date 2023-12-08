@@ -5,18 +5,17 @@
 # 정해진 숫자를 점수로 치환해서 대입해서 합계를 낸다.
 
 # 문제 정답
-list_correct = [2,1,1,2]
+
 score = [10,15,10,5]
 list_answer = []
 my_score = 0
 
-for i in range(len(list_correct)):
-    if list_answer[i] == list_correct[i]:
-        my_score[i]
-        pass
+correct = input("번호를 입력하세요 : ")
+list_correct = [2,1,1,2]
 
-print(my_score)
-
+for number in list_correct:
+    result = int(correct) + int(number)
+    print("{}".format(result))
 
 
 
