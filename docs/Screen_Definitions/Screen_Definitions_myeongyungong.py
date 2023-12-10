@@ -12,7 +12,7 @@ user_answer = [0,0,0,0]     # 입력 받을 정답 변수
 list_score = [10,15,10,5]   # 정답에 따른 점수 변수
 score = 0                   # 합산 변수
 
-for i in range(len(user_answer)):
+for i in user_answer:
     user_answer[i] = list_score[i]
     score += user_answer[i]
 
