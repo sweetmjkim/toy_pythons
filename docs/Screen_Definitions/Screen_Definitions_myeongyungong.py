@@ -6,30 +6,26 @@
 
 # 문제 정답
 
-score = [10,15,10,5]
-list_answer = []
 
-correct = input("번호를 입력하세요 : ")
-list_correct = [2,1,1,2]
+answer = [2,1,1,2]          # 정해진 정답 변수 -> 이후에 입력받을수 있게 변환
+user_answer = [0,0,0,0]     # 입력 받을 정답 변수 
+list_score = [10,15,10,5]   # 정답에 따른 점수 변수
+score = 0                   # 합산 변수
 
-index = [0,0,0,0]
+for i in range(len(user_answer)):
+    user_answer[i] = list_score[i]
+    score += user_answer[i]
 
-for number in list_correct:
-    for my_score in score:
-        result = int(my_score)
-        print("{}".format(result))
+    if score >= 30:
+        user_grade = 'A'
+    elif score >= 20:
+        user_grade = 'B'
+    else :
+        user_grade = 'C'
+
+print("응답결과 : 1번 : {} 2번 : {}, 3번 : {}, 4번 : {}".format(answer[0],answer[1],answer[2],answer[3]))
+print("합산 점수 : {}".format(score))
+print("등급 : {}".format(user_grade))
+    
 
 
-
-
-
-
-# 학점 출력
-# sum = 점수합계
-# my_grade = 학점 출력
-
-
-def main():
-    # print("응답한 내용 : {}".format(list_static))
-    print("당신 응답 합계 : {}".format())
-    print("학점은 : {}".format())
