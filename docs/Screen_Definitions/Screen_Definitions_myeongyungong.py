@@ -6,7 +6,7 @@
 
 # 문제 정답
 
-
+# 정해진 답에 대한 점수 합계
 answer = [2,1,1,2]          # 정해진 정답 변수 -> 이후에 입력받을수 있게 변환
 user_answer = [0,0,0,0]     # 입력 받을 정답 변수 
 list_score = [10,15,10,5]   # 정답에 따른 점수 변수
@@ -28,4 +28,24 @@ print("합산 점수 : {}".format(score))
 print("등급 : {}".format(user_grade))
     
 
+# 입력한 값으로 점수 합계(진행중)
 
+
+# user_answer = [0,0,0,0]     # 입력 받을 정답 변수 
+# list_score = [10,15,10,5]   # 정답에 따른 점수 변수
+# score = 0                   # 합산 변수
+
+# for i in range(len(user_answer)):
+#     input_answer = int(input("정답 입력 : ")) # 정답 입력받을 변수
+
+#     if input_answer[i] == 2 :
+#         #list_score[i] = input_answer
+#         user_answer[i] = list_score[i]
+#         score += user_answer[i]
+#         pass
+#     elif input_answer[i] == 1:
+#         user_answer[i] = list_score[i]
+#         score += user_answer[i]
+
+# print(score)
+        
