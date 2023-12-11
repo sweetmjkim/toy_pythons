@@ -36,13 +36,15 @@ score = 0                   # 합산 변수
 
 for i in range(len(user_answer)):
     input_answer = int(input("정답 입력 : ")) # 정답 입력받을 변수
-    user_answer[i] = input_answer
+    user_answer[i] = input_answer # user_answer에 정답 삽입
 
+    # 정답 입력 번호 시 점수 합산
     if input_answer == 2:
         score += list_score[i]
     elif input_answer == 1:
         score += list_score[i]
 
+    # 등급 매기기
     if score >= 30:
         user_grade = 'A'
     elif score >= 20:
