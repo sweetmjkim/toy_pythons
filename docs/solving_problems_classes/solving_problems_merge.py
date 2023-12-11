@@ -1,6 +1,9 @@
 # 입력한 값으로 점수 합계(진행중)
 class Calculate:
-    def cal_score():
+    def __init__(self) : 
+        pass
+
+    def cal_score(self):
 
         user_answer = [0,0,0,0]     # 입력 받을 정답 변수 
         list_score = [10,15,10,5]   # 정답에 따른 점수 변수
@@ -15,12 +18,9 @@ class Calculate:
                 score += list_score[i]
             elif input_answer == 1:
                 score += list_score[i]
-
-        return user_answer, score
-            
         
 
-    def main(user_answer,score): # 등급 매기고 출력
+    def main(self,user_answer,score): # 등급 매기고 출력
         # 등급 매기기
         if score >= 30:
             user_grade = 'A'
@@ -32,9 +32,10 @@ class Calculate:
         print("응답결과 : 1번 : {} 2번 : {}, 3번 : {}, 4번 : {}".format(user_answer[0],user_answer[1],user_answer[2],user_answer[3]))
         print("합산 점수 : {}".format(score))
         print("등급 : {}".format(user_grade))
+
         
-    # user_answer, score = cal_score()
-    
+   
 
 calculate = Calculate()
+calculate.cal_score()
 calculate.main()
